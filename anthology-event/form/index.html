@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンソロ登録フォーム</title>
+</head>
+<body>
+
+  <h1>アンソロ登録フォーム</h1>
+
+  <form id="anthologyForm">
+
+    <h2>基本情報</h2>
+    <label>タイトル：<input type="text" name="title" required></label><br>
+    <label>テーマ：<input type="text" name="theme"></label><br>
+    <label>発行日：<input type="date" name="release"></label><br>
+
+    <h2>主催者情報</h2>
+    <label>主催者名：<input type="text" name="main_name"></label><br>
+    <label>主催者SNS：<input type="text" name="main_twitter"></label><br>
+    <label>副主催者名：<input type="text" name="sub_name"></label><br>
+    <label>副主催者SNS：<input type="text" name="sub_twitter"></label><br>
+
+    <h2>画像アップロード</h2>
+    <label>告知画像（notice）：<input type="file" name="notice"></label><br>
+    <label>表紙画像（cover）：<input type="file" name="cover"></label><br>
+    <label>バナー画像（banner）：<input type="file" name="banner"></label><br>
+    <label>執筆者一覧画像（contributors）：<input type="file" name="contributors"></label><br>
+
+    <h3>サンプル画像（複数可）</h3>
+    <input type="file" name="samples" multiple><br>
+
+    <h2>コメント</h2>
+    <textarea name="comment" rows="4"></textarea><br>
+
+    <h2>通販リンク</h2>
+    <label>リンク1：<input type="url" name="store1"></label><br>
+    <label>リンク2：<input type="url" name="store2"></label><br>
+    <label>リンク3：<input type="url" name="store3"></label><br>
+
+    <h2>カスタム欄</h2>
+    <label>セクションタイトル：<input type="text" name="custom_title"></label><br>
+    <label>本文：<textarea name="custom_content" rows="4"></textarea></label><br>
+
+    <button type="submit">送信</button>
+  </form>
+
+  <script src="submit.js"></script>
+</body>
+</html>

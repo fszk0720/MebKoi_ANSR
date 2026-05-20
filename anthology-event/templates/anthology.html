@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>${title}</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/common.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="title">
+  <img src=${images.notice}>
+  <div class="title__inner">
+    <h1>テーマ【${theme}】</h1>
+    <p>漫画っぽい雰囲気の<br>テンプレートです。</p>
+
+  </div>
+</div>
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12" id="headernav">
+          <div class="headernav__inner">
+            <nav>
+              <ul>
+                <li><a href="#illust">サンプル</a></li>
+                <li><a href="#novels">小説</a></li>
+                <li><a href="#about">テーマ</a></li>
+                <li><a href="#link">リンク集</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <h2>${title}</h2>
+          <p>漫画っぽい、モノクロの個性的なデザインです。<br>
+            Web漫画を連載されているサイトさまにおすすめです。<br>
+            トップ画像はカラーのものを使っていただければ、<strong>CSSでモノクロになるフィルター効果を追加します</strong>。<br>
+            もちろん、フィルターをかけるCSSを無効にして、カラーイラストをお使いいただいても、巻頭カラーみたいでカッコよくなると思います。<br>
+          <a href="#">リンク文字はピンク色</a>。<strong>強調文字は波線です。</strong></p>
+
+          <ul>
+            <li><a href="books.html">頒布物一覧ページ</a> - 同人誌の紹介などに。</li>
+            <li><a href="text.html">文章用ページ</a> - 小説作品やレポート報告などに。</li>
+            <li><a href="comic.html">マンガ用ページ</a> - WEB漫画やイラスト展示に。</li>
+          </ul>
+
+        </div><!-- end col-12 -->
+
+        <div class="col-12 margin-top">
+
+          <h3>サンプル</h3>
+
+          <p>連載中の漫画や新作、イベント情報など、大きなバナーで宣伝することができます。<br>
+            使用画像は850px×200px以上を推奨します。<br>
+            ボックスは背景色が黒/ピンク、位置が右/左で自由に設定できます。
+            class="text （right/left） （black/pink）"で設定してください。<br>
+            imgにclass="bw"を付けると白黒画像になります。</p>
+
+          <a href="comic.html" class="big-banner">
+            <img src="img/big-bn.jpg" alt="漫画です！" class="bw">
+            <div class="text right black">
+              <div class="text__inner">
+                              <h3>サンプル</h3>
+                              <p>ラブロマンス漫画です。<br>
+                                2019.12.24更新</p>
+
+              </div>
+            </div>
+          </a><!-- end big-bn-->
+
+          <a href="comic.html" class="big-banner">
+            <img src="img/big-bn2.jpg" alt="漫画です！">
+            <div class="text left pink">
+              <div class="text__inner">
+                <h3>執筆者一覧</h3>
+                <p>パッと目を引くデザインです。見せゴマなどを設定するとよいかも。</p>
+              </div>
+            </div>
+          </a><!-- end big-bn -->
+
+          <div class="comiccard">
+
+          <a href="${store_1}" class="comiccard__wrap black" target="_blank" rel="noopener">
+            <img src="${images.cover}" alt="${images.banner}" class="bw">
+             <div class="text">
+             <h3>通販はこちら</h3>
+  </div>
+</a><!-- end comiccard__wrap -->
+
+            <a href="comic.html" class="comiccard__wrap black">
+              <img src="img/comic03.jpg" alt="漫画です！" class="bw">
+              <div class="text">
+                <h3>漫画３</h3>
+                <p>サムネイルは200px×200px以上の画像を使ってください。</p>
+              </div>
+ 
+            </a><!-- end comiccard__wrap -->
+
+          </div>
+        </div> <!-- end col-12 -->
+
+            <div class="col-12 margin-top">
+              <h2 id="about">このサイトについて</h2>
+              <p>このサイトはこんなサイトです。こんなことをしてます。<br>
+              ジャパニーズMANGA（http://xxx.xxx.jp/）<br>
+              バナー<br>
+              <img src="./img/bn-l.jpg"><img src="./img/bn-m.jpg"><img src="./img/bn-s.jpg"></p>
+            </div> <!-- end col-12 -->
+
+            <div class="col-12 margin-top">
+              <h2 id="link">link</h2>
+              <p>大好きなサイトさんです。</p>
+              <ul class="link01">
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+                <li><a href="#" target="_blank"><img src="./img/bn-l.jpg"></a></li>
+              </ul>
+
+              <h3>素材サイトさま</h3>
+              <ul class="link02">
+                <li><a href="https://unsplash.com/" title="トップ写真をお借りしました" target="_blank">Unsplash</a></li>
+                <li><a href="#" target="_blank">＊＊＊</a></li>
+                <li><a href="#" target="_blank">＊＊＊</a></li>
+              </ul>
+            </div> <!-- end col-12 -->
+
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="template"><a href="https://do.gt-gt.org/" target="_blank">template by do.</a></p>
+    </div>
+  </footer>
+
+<script src="js/lightbox.js" charset="utf-8"></script>
+</body>
+
+</html>
